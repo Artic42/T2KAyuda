@@ -1,1 +1,1 @@
-pdflatex main.tex
+pdflatex AyudaT2K.tex
