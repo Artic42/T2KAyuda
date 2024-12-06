@@ -1,12 +1,62 @@
 \section{Movimiento}
+    En este juego el movimiento se describe en dos escalas, táctico y estratégico. En combate siempre se moverá en escala táctica, en estos mapas un casilla es una distancia equivalente a 10 metros.
 
     \subsection{A pie}
+        Moverse a pie es una acción rápida, un jugador puede moverse dos casillas sin hacer ningún chequeo si lo hace de pie.
+        Levantarse es una acción rápida. Si queremos movernos mas de dos casillas, tras movernos dos casillas, hacemos un chequeo de \emph{MOBILITY}.
+        Por cada acierto te puedes mover una casilla más.
+
+        \paragraph{Arrastrarse}
+        Si estas tumbado no puedes correr. Pero puedes arrástrate. Arrastrarse funciona igual que moverse pero te mueve una casilla en lugar de dos.
+        Con el chequeo de \emph{MOBILITY} solo puedes aumentar tu movimiento en una casilla. El movimiento máximo arrastrándose es 2.
+
+        \paragraph{Mochila}
+        Si llevas una mochila tu tirada de movilidad se vera afectada según la tabla \ref{table:1}.
+
+        \begin{table}
+            \centering
+            \begin{tabular}{ c c }
+                \hline
+                Mochila & Modificador \\
+                \hline
+                0 - 1/3 & -1 \\
+                1/3 - 2/3 & -2 \\
+                2/3 - Lleno & -3 \\
+                \hline
+            \end{tabular}
+            \caption{Modificadores de movilidad por mochila.}
+            \label{table:1}
+        \end{table}
+
+        \paragraph{Elevación}
+        Moverse un terreno hacia terreno más elevado cuesta 2 casillas de movimiento en lugar de 1. Si no tienes dos casillas de movimiento no te puedes mover hacia terreno elevado.
+
+        \paragraph{Ceganales y aguas poco profundas}
+        Correr por un cenagal funcionar igual que arrastrase. No se puede arrastrar a traves de cenagales o vados.
+
+        \paragraph{Combate cuerpo a cuerpo}
+        Si sabes que hay un enemigo en tu casillas no puedes correr. En su lugar debes retirarte, ver sección \ref{page:retreat}
+
+        \subsubsection{Barreras}
 
     \subsection{Vehículos}
 
+\section{Cobertura}
+    Existen dos tipos de cobertura parcial y completa. En una casilla con terreno que permite tomar cobertura puede utilizar una acción rápida para \emph{entrar en cobertura}.
+    Al entrar en cobertura debes decidir si entras en cobertura parcial o completa.
+
+    \paragraph{Cambiar cobertura}
+    Cambiar de cobertura completa a parcial exige una acción gratuita. Cambiar de cobertura parcial a completa es una acción gratuita, pero solo lo puedes hacer en tu turno.
+
+    \paragraph{Dirección de cobertura}
+    La cobertura solo tiene efecto si el ataque viene de una angulo de 120 grados, podemos ver un ejemplo en la imagen de la página 59 del manual de juego.
+
+    \paragraph{Misma casilla}
+    Para que la cobertura sea valida cuando el ataque viene de la misma casilla, la cobertura deberá ser por una barrera que cruza todo la casilla.
+
 \section{Atacar}
 
-    \subsection{Cuerpo a cuerpo}
+    \subsection{Cuerpo a cuerpo} \label{page:retreat}
 
     \subsection{Ataque a distancia}
 
