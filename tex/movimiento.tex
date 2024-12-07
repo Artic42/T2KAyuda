@@ -38,19 +38,19 @@ En este juego el movimiento se describe en dos escalas, táctico y estratégico.
 
         \subsubsection{Barreras}
         Si una barrera cubre una casilla de lado a lado esta barrera bloquea el movimiento en esta casilla.
-        Si la barrera es de altura media se puede saltar con un chequeo de \emph{MOBILITY}, esto se considera una acción rapida. Si la barre es alta entonces esta acción consume un acción lenta. Cruzar de barrera solo te mueve a la siguiente casilla si la barrera estaba en la esquina de la casilla.
+        Si la barrera es de altura media se puede saltar con un chequeo de \emph{MOBILITY}, esto se considera una acción rápida. Si la barre es alta entonces esta acción consume un acción lenta. Cruzar de barrera solo te mueve a la siguiente casilla si la barrera estaba en la esquina de la casilla.
 
     \subsection{Vehículo(82)}
 
-    Subirse o bajarse del vehiculo se considera una acción lenta. Si el vehiculo es una motocicleta o bicicleta se convierte en acción rapida.
+    Subirse o bajarse del vehículo se considera una acción lenta. Si el vehículo es una motocicleta o bicicleta se convierte en acción rápida.
 
-    El vehiculo se mueve una cantidad de casilla igual a su movimiento utilizando un acción rapida. El movimiento se puede acabar en el angulo que el conductor decida. Para moverse más rapido se puede hacer un chequeo de \emph{DRIVING}, modificado por el terrenoo en el que se ha terminado la primera fase de movimiento. Si hay un acierto el vehiculo volverá a mover su movimiento más una casilla por acierto. Si el chequeo falla el vehiculo se queda "atascado".
+    El vehículo se mueve una cantidad de casilla igual a su movimiento utilizando un acción rápida. El movimiento se puede acabar en el angulo que el conductor decida. Para moverse más rápido se puede hacer un chequeo de \emph{DRIVING}, modificado por el terreno o en el que se ha terminado la primera fase de movimiento. Si hay un acierto el vehículo volverá a mover su movimiento más una casilla por acierto. Si el chequeo falla el vehículo se queda "atascado".
 
-        \subsubsection{Atascado(82)}
-        Si el vehiculo queda atascado el conductor puede hacer una acción lenta para intentar liberarlo. Hace un chequeo de \emph{DRIVING}.Si el chequeo falla el vehiculo queda "estancado".
+        \paragraph{Atascado(82)}
+        Si el vehículo queda atascado el conductor puede hacer una acción lenta para intentar liberarlo. Hace un chequeo de \emph{DRIVING}.Si el chequeo falla el vehículo queda "estancado".
 
-        \subsubsection{Estancado(82)}
-        Un vehiculo estancado no se puede mover. Para liberarlo se debe salir del vehiculo y hacer un chequeo de \emph{STAMINA}, se recibe +2 si se utiliza otro vehiculo de mismo o mayor peso.
+        \paragraph{Estancado(82)}
+        Un vehículo estancado no se puede mover. Para liberarlo se debe salir del vehículo y hacer un chequeo de \emph{STAMINA}, se recibe +2 si se utiliza otro vehículo de mismo o mayor peso.
 
-        \subsubsection{Lanzadores de humo(82)}
-        Un vehiculo equipado con lanzadores de humo puede activarlo para llenar las seis casillas adyacentes con humo.
+        \paragraph{Lanzadores de humo(82)}
+        Un vehículo equipado con lanzadores de humo puede activarlo para llenar las seis casillas adyacentes con humo.
